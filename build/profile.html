@@ -17,39 +17,113 @@
                  src="../src/assets/images/icons/hamburger-menu.png">
         </div>
     </nav>
-    <main class="mx-5">
-        <section class="flex flex-col items-center lg:bg-new-white lg:rounded-lg gap-5">
-            <div class="bg-welcome-profile-card items-center rounded-xl p-8 w-full flex flex-col">
-                <div class="flex flex-col text-primary items-center">
-                    <h1 class=" text-2xl font-heading">Welcome back!</h1>
-                    <p class="font-primary text-base">Hope you are feeling wander-ful today!</p>
-                    <button class="bg-primary font-primary text-new-white rounded">Visit Your Blogpage</button>
+    <main class="mx-5 lg:bg-new-white lg:rounded-lg">
+        <section
+                class="flex flex-col flex-wrap md:justify-center lg:flex-row items-center gap-5">
+            <div class="bg-welcome-profile-card items-center rounded-xl p-8 w-full flex flex-col sm:max-w-[450px] shadow-lg">
+                <div class="flex flex-col text-primary items-center gap-5">
+                    <h1 class=" text-2xl font-heading tracking-wider">Welcome back!</h1>
+                    <p class="font-primary text-base text-center">Hope you are feeling wander-ful today!</p>
+                    <button class="hover:bg-secondary hover:text-primary border-primary border rounded font-primary text-new-white text-lg bg-primary h-12 mt-5 mb-5 px-5">
+                        Visit Your Blogpage
+                    </button>
                 </div>
                 <img alt="Man with suitcase walking past a world map"
                      class="w-[250px] md:max-w-[804px] h-[166px] text-base"
                      src="../src/assets/images/profile/traveller-map.svg">
             </div>
-            <div class="bg-stats-profile-card p-8 items-center rounded-xl flex w-full justify-center gap-6">
-                <div class="font-primary text-primary flex flex-col items-center">
-                    <p class="text-xl">Visits for today</p>
-                    <div class="text-6xl">128</div>
-                </div>
-                <div>
-                    <div class="flex font-secondary text-primary items-center">
-                        <img alt=""
-                             class="rounded bg-[#F8F8F840] items-center h-6 w-6" src="../src/assets/images/icons/star-profile-dark.svg">
-                        <div class="flex flex-col text-xs">
-                            <span>Popularity</span>
-                            <span class="font-bold">91</span>
+            <div class="bg-stats-profile-card p-4 rounded-xl w-full flex justify-center sm:max-w-[450px] shadow-lg"
+                 id="stats">
+                <div class="flex items-center gap-8">
+                    <div class="font-primary text-primary flex flex-col items-center justify-center gap-4">
+                        <p class="text-base text-center">Visits for today</p>
+                        <div class="text-6xl">128</div>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full">
+                        <div class="flex font-secondary text-primary items-center gap-4">
+                            <img alt="Star Icon"
+                                 class="rounded bg-[#F8F8F860] items-center p-2 h-9 w-9"
+                                 src="../src/assets/images/icons/star-profile-dark.svg">
+                            <div class="flex flex-col text-xs">
+                                <span>Popularity</span>
+                                <span class="font-bold">91</span>
+                            </div>
+                        </div>
+                        <div class="flex font-secondary text-primary gap-4">
+                            <img alt="Stats Icon"
+                                 class="rounded bg-[#F8F8F860] items-center h-9 w-9 p-2"
+                                 src="../src/assets/images/icons/stats-profile-dark.svg">
+                            <div class="flex flex-col text-xs">
+                                <span>General rate</span>
+                                <span class="font-bold">4.2</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex font-secondary text-primary">
-                        <img alt=""
-                             class="rounded bg-[#F8F8F840] items-center h-6 w-6" src="../src/assets/images/icons/stats-profile-dark.svg">
-                        <div class="flex flex-col text-xs">
-                            <span>General rate</span>
-                            <span class="font-bold">4.2</span>
-                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="flex flex-col md:flex-row md:justify-center flex-wrap items-center my-10 gap-5">
+            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+                <p class="text-primary font-primary text-center text-lg">Got something to share?</p>
+                <button class="px-4 py-2.5 flex gap-2 bg-[#F2E6E5] rounded border-2 border-[#F2E6E5] hover:bg-new-white cursor-pointer">
+                    <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/create-post.svg">
+                    <span class="font-secondary text-primary text-base">Create New Post</span>
+                </button>
+            </div>
+            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+                <p class="text-primary font-primary text-center text-lg">Remember to check your messages</p>
+                <button class="px-4 py-2.5 flex gap-2 bg-[#D5EBE3] rounded border-2 border-[#D5EBE3] hover:bg-new-white cursor-pointer">
+                    <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/inbox.svg">
+                    <span class="font-secondary text-primary text-base">Open Inbox</span>
+                </button>
+            </div>
+            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+                <p class="text-primary font-primary text-center text-lg">Check out your latest stats</p>
+                <button class="px-4 py-2.5 flex gap-2 bg-[#FFE66A50] border border-2 border-transparent rounded hover:bg-new-white hover:border-2 hover:border-[#FFE66A50] cursor-pointer">
+                    <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/stats-sm.svg">
+                    <span class="font-secondary text-primary text-base">View All Stats</span>
+                </button>
+            </div>
+        </section>
+        
+        <section
+                class="bg-latest-post w-full sm:max-w-[450px] p-5 flex flex-col md:flex-row md:justify-center flex-wrap items-center my-10 bg-new-white shadow-lg rounded-xl gap-5">
+            <p class="text-new-white font-primary text-2xl pt-3">Your latest posts</p>
+            <div class="w-full flex flex-col justify-center items-center gap-5">
+                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
+                         src="../src/assets/images/profile/sveits.jpg">
+                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
+                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
+                    </div>
+                </div>
+                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
+                         src="../src/assets/images/profile/sveits.jpg">
+                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
+                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
+                    </div>
+                </div>
+                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
+                         src="../src/assets/images/profile/sveits.jpg">
+                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
+                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
+                    </div>
+                </div>
+                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
+                         src="../src/assets/images/profile/sveits.jpg">
+                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
+                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
+                    </div>
+                </div>
+                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
+                         src="../src/assets/images/profile/sveits.jpg">
+                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
+                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
                     </div>
                 </div>
             </div>
