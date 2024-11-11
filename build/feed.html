@@ -8,11 +8,55 @@
     <title>Travel Threads - John Doe</title>
 </head>
 <body>
-<nav>
-    <img class="text-primary" src="../src/assets/images/icons/logo-dark.png" alt="Logo Eye">
-</nav>
-    <main>
-    
-    </main>
+    <div class="flex h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-pink-100 p-6 flex flex-col">
+            <!-- Logo or Icon at the top -->
+            <div class="mb-6">
+                <img src="path/to/logo.png" alt="Logo" class="h-12 w-12 mx-auto">
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="flex flex-col gap-4">
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>🏠</span> <span>Home</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>📄</span> <span>Blogpage</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>📊</span> <span>Statistics</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>✏️</span> <span>Edit Profile</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>⚙️</span> <span>Settings</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 text-gray-800 hover:text-black">
+                    <span>🔒</span> <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="flex-1 p-8">
+            <!-- Top Bar -->
+            <header class="flex justify-between items-center mb-8">
+                <div class="flex items-center space-x-4">
+                    <button class="bg-gray-200 p-2 rounded-full">🌞</button> <!-- Dark mode toggle -->
+                    <span class="text-gray-600">Hello, John Doe!</span>
+                </div>
+                <img src="path/to/profile-pic.jpg" alt="Profile Picture" class="h-10 w-10 rounded-full">
+            </header>
+            
+            <!-- Content -->
+            <div>
+                <h1 class="text-2xl font-bold">Welcome Back!</h1>
+                <!-- Place the rest of your content here -->
+            </div>
+        </main>
+    </div>
+
 </body>
 </html>
