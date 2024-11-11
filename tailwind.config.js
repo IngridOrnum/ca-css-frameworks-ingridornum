@@ -23,10 +23,14 @@ module.exports = {
         'latest-post': 'linear-gradient(169deg, rgba(73, 30, 30, 0.39) 0%, #FCFCFB 100%)'
       },
       height: {
-        'profile-post': '180px'
+        'profile-post': '120px'
       },
       width: {
-        'profile-post': '300px'
+        'profile-section-sm': '366px',
+        'profile-section-lg': '950px',
+        'profile-section-2xl': '1068px',
+        'profile-post-sm': '200px',
+        'profile-post-lg': '180px'
       }
     },
   },

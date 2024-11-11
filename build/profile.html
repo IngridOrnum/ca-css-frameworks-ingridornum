@@ -17,10 +17,10 @@
                  src="../src/assets/images/icons/hamburger-menu.png">
         </div>
     </nav>
-    <main class="mx-5 lg:bg-new-white lg:rounded-lg">
+    <main class="m-5 w-full h-full lg:bg-new-white lg:rounded-lg flex flex-col items-center justify-center">
         <section
-                class="flex flex-col flex-wrap md:justify-center lg:flex-row items-center gap-5">
-            <div class="bg-welcome-profile-card items-center rounded-xl p-8 w-full flex flex-col sm:max-w-[450px] shadow-lg">
+                class="w-profile-section-sm lg:w-profile-section-lg lg:h-[318px] 2xl:w-profile-section-2xl flex flex-col flex-wrap lg:flex-row items-center gap-5">
+            <div class="w-full lg:w-[700px] lg:h-full lg:flex-row bg-welcome-profile-card items-center rounded-xl p-8 flex flex-col shadow-lg">
                 <div class="flex flex-col text-primary items-center gap-5">
                     <h1 class=" text-2xl font-heading tracking-wider">Welcome back!</h1>
                     <p class="font-primary text-base text-center">Hope you are feeling wander-ful today!</p>
@@ -32,9 +32,9 @@
                      class="w-[250px] md:max-w-[804px] h-[166px] text-base"
                      src="../src/assets/images/profile/traveller-map.svg">
             </div>
-            <div class="bg-stats-profile-card p-4 rounded-xl w-full flex justify-center sm:max-w-[450px] shadow-lg"
+            <div class="w-full lg:w-[230px] lg:h-full bg-stats-profile-card p-8 rounded-xl flex justify-center shadow-lg"
                  id="stats">
-                <div class="flex items-center gap-8">
+                <div class="flex items-center gap-8 lg:flex-col">
                     <div class="font-primary text-primary flex flex-col items-center justify-center gap-4">
                         <p class="text-base text-center">Visits for today</p>
                         <div class="text-6xl">128</div>
@@ -63,22 +63,23 @@
             </div>
         </section>
         
-        <section class="flex flex-col md:flex-row md:justify-center flex-wrap items-center my-10 gap-5">
-            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+        <section
+                class="w-profile-section-sm lg:w-profile-section-lg lg:justify-between 2xl:w-profile-section-2xl flex flex-col lg:flex-row justify-center flex-wrap items-center my-10 gap-5">
+            <div class="w-full lg:w-[300px] p-8 h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
                 <p class="text-primary font-primary text-center text-lg">Got something to share?</p>
                 <button class="px-4 py-2.5 flex gap-2 bg-[#F2E6E5] rounded border-2 border-[#F2E6E5] hover:bg-new-white cursor-pointer">
                     <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/create-post.svg">
                     <span class="font-secondary text-primary text-base">Create New Post</span>
                 </button>
             </div>
-            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+            <div class="w-full lg:w-[300px] p-8 h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
                 <p class="text-primary font-primary text-center text-lg">Remember to check your messages</p>
                 <button class="px-4 py-2.5 flex gap-2 bg-[#D5EBE3] rounded border-2 border-[#D5EBE3] hover:bg-new-white cursor-pointer">
                     <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/inbox.svg">
                     <span class="font-secondary text-primary text-base">Open Inbox</span>
                 </button>
             </div>
-            <div class="w-full sm:max-w-[450px] h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
+            <div class="w-full lg:w-[300px] p-8 h-[200px] flex flex-col justify-center items-center bg-new-white shadow-lg rounded-xl gap-5">
                 <p class="text-primary font-primary text-center text-lg">Check out your latest stats</p>
                 <button class="px-4 py-2.5 flex gap-2 bg-[#FFE66A50] border border-2 border-transparent rounded hover:bg-new-white hover:border-2 hover:border-[#FFE66A50] cursor-pointer">
                     <img alt="Create Icon" class="h-5 w-5" src="../src/assets/images/icons/stats-sm.svg">
@@ -87,45 +88,42 @@
             </div>
         </section>
         
-        <section
-                class="bg-latest-post w-full sm:max-w-[450px] p-5 flex flex-col md:flex-row md:justify-center flex-wrap items-center my-10 bg-new-white shadow-lg rounded-xl gap-5">
-            <p class="text-new-white font-primary text-2xl pt-3">Your latest posts</p>
-            <div class="w-full flex flex-col justify-center items-center gap-5">
-                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+        <section class="w-profile-section-sm lg:w-profile-section-lg 2xl:w-profile-section-2xl bg-new-white p-8 flex flex-col md:justify-center flex-wrap items-center my-10 lg:my-0 shadow-lg rounded-xl gap-5">
+            <p class="text-primary font-primary text-2xl pt-3 lg:pt-0">Your latest posts</p>
+            <div class="w-full flex flex-col lg: flex-wrap lg:flex-row justify-center items-center gap-5 lg:gap-2">
+                <div class="lg:w-profile-post-lg relative h-profile-post w-profile-post-sm border border-transparent rounded-xl overflow-hidden">
                     <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
                          src="../src/assets/images/profile/sveits.jpg">
                     <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
                         <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
                     </div>
                 </div>
-                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                <div class="lg:w-profile-post-lg relative h-profile-post w-profile-post-sm border border-transparent rounded-xl overflow-hidden">
                     <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
                          src="../src/assets/images/profile/sveits.jpg">
                     <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
                         <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
                     </div>
                 </div>
-                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                <div class="lg:w-profile-post-lg relative h-profile-post w-profile-post-sm border border-transparent rounded-xl overflow-hidden">
                     <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
                          src="../src/assets/images/profile/sveits.jpg">
                     <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
                         <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
                     </div>
                 </div>
-                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
+                <div class="lg:w-profile-post-lg relative h-profile-post w-profile-post-sm border border-transparent rounded-xl overflow-hidden">
                     <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
                          src="../src/assets/images/profile/sveits.jpg">
                     <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
                         <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
                     </div>
                 </div>
-                <div class="relative h-profile-post w-profile-post border border-transparent rounded-xl overflow-hidden">
-                    <img alt="Swiss Nature" class="object-cover top-0 left-0 w-full h-full"
-                         src="../src/assets/images/profile/sveits.jpg">
-                    <div class="absolute bg-[#999999]/50 w-full h-full object-cover bottom-0 flex items-center justify-center">
-                        <p class="font-secondary text-white text-xl font-bold tracking-wider">Switzerland</p>
-                    </div>
-                </div>
+                <button class="lg:h-profile-post lg:p-0 lg:flex-col-reverse lg:flex-wrap lg:w-[62px] lg:text-sm px-4 py-2.5 flex gap-2 bg-[#C7D6EA] w-profile-post-sm border-2 border-transparent rounded hover:bg-new-white hover:border-2 hover:border-[#C7D6EA] justify-center items-center cursor-pointer font-primary">
+                    <img alt="Swiss Nature" class="h-6 w-6"
+                         src="../src/assets/images/icons/arrow-right.svg">
+                    See More
+                </button>
             </div>
         </section>
     </main>
