@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
-    <script src="js/homepage.js" defer></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <script defer src="js/homepage.js"></script>
     <title>Travel Threads - Home</title>
 </head>
-<body class="relative h-screen overflow-hidden bg-violet-400">
+<body class="relative h-screen overflow-hidden">
     <nav class="absolute top-0 z-50 w-full flex p-4">
         <div class="flex justify-between w-full">
             <div class="flex items-center gap-2.5">
-                <img src="../src/assets/images/icons/logo-dark.png" alt="Logo with an eye" class="h-8 w-8">
+                <img alt="Logo with an eye" class="h-8 w-8" src="../src/assets/images/icons/logo-dark.png">
                 <span class="font-heading text-primary">Travel Threads</span>
             </div>
             <div class="flex gap-3.5">
-                <button id="nav-signup" class="font-primary text-primary cursor-pointer">Sign Up</button>
-                <button id="nav-login" class="font-primary text-primary border rounded border-primary py-1 px-2.5 hover:bg-opacity-new-white cursor-pointer">
+                <button class="font-primary text-primary cursor-pointer" id="nav-signup">Sign Up</button>
+                <button class="font-primary text-primary border rounded border-primary py-1 px-2.5 hover:bg-opacity-new-white cursor-pointer"
+                        id="nav-login">
                     Log In
                 </button>
             </div>
@@ -27,74 +28,80 @@
         <div class="relative h-screen w-screen">
             <video
                     autoplay
+                    class="absolute top-0 left-0 w-full h-full object-cover"
                     loop
                     muted
-                    playsinline
-                    class="absolute top-0 left-0 w-full h-full object-cover">
+                    playsinline>
                 <source src="../src/assets/video/running-up-mountain-top.mp4" type="video/mp4"/>
             </video>
             <div class="absolute inset-0 flex items-center justify-center z-10">
                 <!--          <div class="bg-[#999999]/70 w-full h-full object-cover"></div>-->
-                <div id="login-form"
-                     class="hidden h-full w-full z-20 bg-new-white mt-[130px] flex flex-col items-center px-5 py-14">
-                    <h2 class="font-primary text-primary text-2xl pb-8">Sign in to your account</h2>
-                    <form class="flex flex-col gap-3 w-11/12">
-                        <div class="flex flex-col text-primary font-primary text-xl gap-2">
-                            <label for="username" class="">Username</label>
-                            <input type="username" name="username" id="username"
-                                   class="border border-primary border-1 rounded h-12 px-4">
-                        </div>
-                        <div class="flex flex-col text-primary font-primary text-xl gap-2">
-                            <label for="password" class="">Password</label>
-                            <input type="password" name="password" id="password"
-                                   class="border border-primary border-1 rounded h-12 px-4">
-                        </div>
-                        <div class="flex justify-between w-full">
-                            <div>
-                                <input type="checkbox" name="remember-me">
-                                <label class="font-primary text-primary" for="remember-me">Remember me</label>
+                <div class="hidden h-full w-full z-20 bg-new-white mt-[130px] flex flex-col items-center px-5 py-14"
+                     id="login-form">
+                    <div class="flex flex-col items-center">
+                        <h2 class="font-primary text-primary text-2xl pb-8">Login to your account</h2>
+                        <form class="flex flex-col gap-3 w-11/12">
+                            <div class="flex flex-col text-primary font-primary text-xl gap-2">
+                                <label class="" for="username">Username</label>
+                                <input class="border border-primary border-1 rounded h-12 px-4" id="username" name="username"
+                                       type="username" required>
                             </div>
-                            <span class="font-primary text-tertiary cursor-pointer">Forgot password?</span>
+                            <div class="flex flex-col text-primary font-primary text-xl gap-2">
+                                <label class="" for="password">Password</label>
+                                <input class="border border-primary border-1 rounded h-12 px-4" id="password" name="password"
+                                       type="password" required>
+                            </div>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <input name="remember-me" type="checkbox">
+                                    <label class="font-primary text-primary" for="remember-me">Remember me</label>
+                                </div>
+                                <span class="font-primary text-tertiary cursor-pointer">Forgot password?</span>
+                            </div>
+                            <button type="submit" class="hover:bg-secondary hover:text-primary mt-8 border-primary border rounded font-primary text-new-white text-xl bg-primary h-12">
+                                Sign In
+                            </button>
+                        </form>
+                        <div class="flex gap-4 mt-5">
+                            <span class="font-primary text-primary">Don't have an account?</span>
+                            <span class="font-primary text-tertiary cursor-pointer underline-offset-auto">Sign up here</span>
                         </div>
-                        <button class="hover:bg-secondary hover:text-primary mt-8 border-primary border rounded font-primary text-new-white text-xl bg-primary h-12">
-                            Sign In
-                        </button>
-                    </form>
-                    <div class="flex gap-4 mt-5">
-                        <span class="font-primary text-primary">Don't have an account?</span>
-                        <span class="font-primary text-tertiary cursor-pointer underline-offset-auto">Sign up here</span>
                     </div>
                 </div>
-                <div id="register-form"
-                     class="hidden h-full w-full z-20 bg-new-white mt-[130px] flex flex-col items-center px-5 py-14">
-                    <h2 class="font-primary text-primary text-2xl pb-8">Register an account</h2>
-                    <form class="flex flex-col gap-3 w-11/12">
-                        <div class="flex flex-col text-primary font-primary text-xl gap-2">
-                            <label for="username" class="">Username</label>
-                            <input type="username" name="username" id="username"
-                                   class="border border-primary border-1 rounded h-12 px-4">
+                <div class="hidden h-full w-full z-20 bg-new-white mt-[130px] flex flex-col items-center px-5 py-14"
+                     id="register-form">
+                    <div class="flex flex-col items-center">
+                        <h2 class="font-primary text-primary text-2xl pb-8">Register an account</h2>
+                        <form class="flex flex-col gap-3 w-11/12">
+                            <div class="flex flex-col text-primary font-primary text-xl gap-2">
+                                <label class="" for="username">Username</label>
+                                <input class="border border-primary border-1 rounded h-12 px-4" id="username" name="username"
+                                       type="username" required>
+                            </div>
+                            <div class="flex flex-col text-primary font-primary text-xl gap-2">
+                                <label class="" for="email">Email Adress</label>
+                                <input class="border border-primary border-1 rounded h-12 px-4" id="email" name="email"
+                                       type="email" required>
+                            </div>
+                            <div class="flex flex-col text-primary font-primary text-xl gap-2">
+                                <label class="" for="password">Password</label>
+                                <input class="border border-primary border-1 rounded h-12 px-4" id="password" name="password"
+                                       type="password" required>
+                            </div>
+                            <button type="submit" class="hover:bg-secondary hover:text-primary mt-8 border-primary border rounded font-primary text-new-white text-xl bg-primary h-12">
+                                Register
+                            </button>
+                        </form>
+                        <div class="flex gap-4 mt-5">
+                            <span class="font-primary text-primary">Already have an account?</span>
+                            <span class="font-primary text-tertiary cursor-pointer underline-offset-auto">Sign in here</span>
                         </div>
-                        <div class="flex flex-col text-primary font-primary text-xl gap-2">
-                            <label for="email" class="">Email Adress</label>
-                            <input type="email" name="email" id="email"
-                                   class="border border-primary border-1 rounded h-12 px-4">
-                        </div>
-                        <div class="flex flex-col text-primary font-primary text-xl gap-2">
-                            <label for="password" class="">Password</label>
-                            <input type="password" name="password" id="password"
-                                   class="border border-primary border-1 rounded h-12 px-4">
-                        </div>
-                        <button class="hover:bg-secondary hover:text-primary mt-8 border-primary border rounded font-primary text-new-white text-xl bg-primary h-12">
-                            Register
-                        </button>
-                    </form>
-                    <div class="flex gap-4 mt-5">
-                        <span class="font-primary text-primary">Already have an account?</span>
-                        <span class="font-primary text-tertiary cursor-pointer underline-offset-auto">Sign in here</span>
                     </div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <h1 class="text-white text-2xl lg:text-4xl font-heading tracking-widest items-center">A UNIQUE WAY OF TELLING YOUR
+                    <h1 class="text-white text-2xl lg:text-4xl font-heading tracking-widest items-center"
+                        id="hero-title">A UNIQUE WAY
+                        OF TELLING YOUR
                         STORIES</h1>
                     <p></p>
                 </div>
