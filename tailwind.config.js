@@ -17,6 +17,7 @@ module.exports = {
         'opacity-new-white': '#FCFCFB60'
       },
       backgroundImage: {
+        'hero-blur-gradient': 'linear-gradient(117deg, rgba(230, 230, 230, 0.38) 0%, rgba(230, 230, 230, 0.10) 100%)',
         'profile-bg-gradient': 'linear-gradient(180deg, #FCFCFB 0%, #F3D0BB 100%)',
         'welcome-profile-card': 'linear-gradient(293deg, #F3D0BB 12.68%, rgba(244, 244, 244, 0.30) 75.55%)',
         'stats-profile-card': 'linear-gradient(128deg, #F3D0BB 25.8%, #FFFEFD 100%)',
@@ -31,6 +32,9 @@ module.exports = {
         'profile-section-2xl': '1068px',
         'profile-post-sm': '200px',
         'profile-post-lg': '180px'
+      },
+      screens: {
+        'mobile-home': '480px'
       }
     },
   },
