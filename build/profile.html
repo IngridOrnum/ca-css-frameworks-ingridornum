@@ -10,70 +10,121 @@
 <body class="bg-new-white lg:bg-profile-bg-gradient bg-no-repeat min-h-screen flex">
     <aside class="hidden w-64 p-4 xl:flex flex-col lg:bg-profile-bg-gradient items-center">
         <!-- Logo or Icon at the top -->
-        <div class="mb-14">
-            <img alt="Logo" class="h-[70px] w-[70px] mx-auto" src="../src/assets/images/icons/logo-dark.png">
+        <div class="hidden xl:block xl:mb-14">
+            <img alt="Logo" class="h-[60px] w-[60px] mx-auto" src="../src/assets/images/icons/logo-dark.png">
         </div>
         <!-- Navigation Links -->
         <nav class="flex flex-col text-primary font-primary text-base uppercase gap-7 mt-10">
             <a class="flex items-center gap-2 text-gray-800 hover:text-black active:bg-primary active:p-2 " href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/home-dark.svg" alt="World Globe Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/home.svg" alt="World Globe Icon">
+                <img alt="World Globe Icon" class="w-5 h-5" src="../src/assets/images/icons/home-dark.svg">
+                <img alt="World Globe Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/home.svg">
                 <span>Home</span>
             </a>
             <a class="flex items-center gap-2 text-gray-800 hover:text-black" href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/blogpage-dark.svg" alt="Blogpage Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/blogpage-light.svg" alt="Blogpage Icon">
+                <img alt="Blogpage Icon" class="w-5 h-5" src="../src/assets/images/icons/blogpage-dark.svg">
+                <img alt="Blogpage Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/blogpage-light.svg">
                 <span>Blogpage</span>
             </a>
             <a class="flex items-center gap-2 text-gray-800 hover:text-black" href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/stats-dark.svg" alt="Statistics Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/stats-light.svg" alt="Statistics Icon">
+                <img alt="Statistics Icon" class="w-5 h-5" src="../src/assets/images/icons/stats-dark.svg">
+                <img alt="Statistics Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/stats-light.svg">
                 <span>Statistics</span>
             </a>
             <a class="flex items-center gap-2 text-gray-800 hover:text-black" href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/profile-dark.svg" alt="Profile Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/profile-light.svg" alt="Profile Icon">
+                <img alt="Profile Icon" class="w-5 h-5" src="../src/assets/images/icons/profile-dark.svg">
+                <img alt="Profile Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/profile-light.svg">
                 <span>Edit Profile</span>
             </a>
             <a class="flex items-center gap-2 text-gray-800 hover:text-black" href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/settings-dark.svg" alt="Settings Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/settings-light.svg" alt="Settings Icon">
+                <img alt="Settings Icon" class="w-5 h-5" src="../src/assets/images/icons/settings-dark.svg">
+                <img alt="Settings Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/settings-light.svg">
                 <span>Settings</span>
             </a>
             <a class="flex items-center gap-2 text-gray-800 hover:text-black" href="#">
-                <img class="w-5 h-5" src="../src/assets/images/icons/logout-dark.svg" alt="Logout Icon">
-                <img class="hidden w-5 h-5" src="../src/assets/images/icons/logout-light.svg" alt="Logout Icon">
+                <img alt="Logout Icon" class="w-5 h-5" src="../src/assets/images/icons/logout-dark.svg">
+                <img alt="Logout Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/logout-light.svg">
                 <span>Logout</span>
             </a>
         </nav>
     </aside>
-    <main class="w-full">
-        <nav class="xl:hidden p-5 w-full flex justify-between">
+    <main class="relative w-full">
+        <nav class="absolute top-0 xl:hidden p-5 w-full flex justify-between z-20 bg-new-white">
             <img alt="Logo Eye" class="text-primary h-10 w-10" src="../src/assets/images/icons/logo-dark.png">
             <div class="flex gap-6 items-center">
                 <img alt="Bell Notification" class="h-10 w-10 cursor-pointer font-primary"
                      src="../src/assets/images/icons/bell-notification.svg">
                 <img alt="Hamburger Menu" class="h-6 w-8 cursor-pointer"
                      src="../src/assets/images/icons/hamburger-menu.png">
+                <img alt="Hamburger Menu" class="hidden h-9 w-9 cursor-pointer" id="hamburger-btn"
+                     src="../src/assets/images/icons/close-btn.svg">
+            </div>
+        </nav>
+        <nav id="dropdown-menu" class=" absolute w-full h-full top-0 left-0 bg-secondary z-10">
+            <div class="p-5 flex flex-col items-center gap-6 mt-24">
+                <div class="flex justify-between gap-20 items-center">
+                    <label class="relative cursor-pointer">
+                        <input type="checkbox" class="sr-only peer" />
+                        <div class="bg-primary w-11 h-6 flex items-center rounded-full peer-checked:after:translate-x-full after:absolute after:left-[2px] after:bg-secondary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary">
+                        </div>
+                    </label>
+                    
+                    <div class="flex gap-2.5 items-center">
+                        <span class="text-primary font-primary">Joanne Doe</span>
+                        <img class="h-10 w-10 rounded-full" src="../src/assets/images/profile/profile-picture.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+                
+                <nav class="flex flex-col text-primary font-primary text-base uppercase gap-10 mt-8 items-center">
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black active:bg-primary active:p-2 " href="#">
+                        <img alt="World Globe Icon" class="w-5 h-5" src="../src/assets/images/icons/home-dark.svg">
+                        <img alt="World Globe Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/home.svg">
+                        <span>Home</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black" href="#">
+                        <img alt="Blogpage Icon" class="w-5 h-5" src="../src/assets/images/icons/blogpage-dark.svg">
+                        <img alt="Blogpage Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/blogpage-light.svg">
+                        <span>Blogpage</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black" href="#">
+                        <img alt="Statistics Icon" class="w-5 h-5" src="../src/assets/images/icons/stats-dark.svg">
+                        <img alt="Statistics Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/stats-light.svg">
+                        <span>Statistics</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black" href="#">
+                        <img alt="Profile Icon" class="w-5 h-5" src="../src/assets/images/icons/profile-dark.svg">
+                        <img alt="Profile Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/profile-light.svg">
+                        <span>Edit Profile</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black" href="#">
+                        <img alt="Settings Icon" class="w-5 h-5" src="../src/assets/images/icons/settings-dark.svg">
+                        <img alt="Settings Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/settings-light.svg">
+                        <span>Settings</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-gray-800 hover:text-black" href="#">
+                        <img alt="Logout Icon" class="w-5 h-5" src="../src/assets/images/icons/logout-dark.svg">
+                        <img alt="Logout Icon" class="hidden w-5 h-5" src="../src/assets/images/icons/logout-light.svg">
+                        <span>Logout</span>
+                    </a>
+                </nav>
             </div>
         </nav>
         <header class="hidden xl:flex p-5 items-center gap-8 justify-end ml-auto">
             <div class="flex items-center">
                 <label class="relative cursor-pointer">
-                    <input type="checkbox" class="sr-only peer bg-secondary" />
+                    <input class="sr-only peer bg-secondary" type="checkbox"/>
                     <div
                             class="bg-primary w-11 h-6 flex items-center rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-secondary after:bg-secondary after:border after:border-primary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary">
                     </div>
                 </label>
             </div>
-            <img class="h-7 w-7" src="../src/assets/images/icons/bell-notification.svg" alt="Bell Notification Icon">
+            <img alt="Bell Notification Icon" class="h-7 w-7" src="../src/assets/images/icons/bell-notification.svg">
             <div class="flex items-center gap-2.5">
                 <span>Joanne Doe</span>
                 <img alt="Profile Picture" class="h-10 w-10 rounded-full"
                      src="../src/assets/images/profile/profile-picture.jpg">
             </div>
         </header>
-        <div class="mr-5 mb-5 w-full lg:bg-new-white lg:rounded-lg flex flex-col items-center justify-center lg:justify-start p-10">
+        <div class="mr-5 mb-5 mt-20  xl:mt-0 w-full lg:bg-new-white lg:rounded-lg flex flex-col items-center justify-center lg:justify-start p-10">
             <section
                     class="w-profile-section-sm lg:w-profile-section-lg lg:h-[318px] 2xl:max-w-profile-section-2xl flex flex-col flex-wrap lg:flex-row items-center gap-5">
                 <div class="w-full lg:w-[700px] lg:h-full lg:flex-row bg-welcome-profile-card items-center rounded-xl p-8 flex flex-col shadow-lg">
