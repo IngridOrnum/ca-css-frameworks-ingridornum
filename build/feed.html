@@ -18,12 +18,14 @@
     <section class="flex flex-col items-center">
         <h2 class="">Browse By Continent</h2>
         <div class="relative p-5">
-            <div class="absolute inset-0 z-1" id="continent-bg"></div>
-            <div class="flex flex-col font-primary text-new-black mt-24 gap-10">
-                <div id="title-continent" class="text-4xl mx-auto">Africa</div>
-                <button class="border border-new-black rounded mx-auto py-2 px-3">See More of Africa</button>
+            <div class="absolute inset-0 z-[-1] object-cover bg-cover bg-center bg-no-repeat" id="continent-bg"></div>
+            <div class="flex flex-col items-center w-full">
+                <div class="flex flex-col font-primary text-new-black mt-24 gap-10 p-10  backdrop-blur-md w-fit rounded">
+                    <div id="title-continent" class="text-4xl mx-auto">Africa</div>
+                    <button class="border border-new-black rounded mx-auto py-2 px-3 hover:bg-new-white hover:border-transparent">See More</button>
+                </div>
             </div>
-            <div id="list-continents" class="flex justify-center mt-52  gap-5 relative text-new-black">
+            <div id="list-continents" class="hidden justify-center mt-52 gap-5 relative text-new-white font-primary lg:flex">
                 <div class="relative">
                     <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Africa">Africa</span>
                     <div class="absolute h-underline-continent bg-new-white left-0 right-0 mx-auto"></div>
@@ -53,7 +55,8 @@
                     <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
                 </div>
             </div>
-            <div class="absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-20"></div>
+            <div class="absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-5"></div>
+            <div class="absolute bg-carousel-feed-gradient bottom-0 left-0 right-0 h-[20%] z-[-1]"></div>
         </div>
     </section>
     <section class="flex flex-col items-center">
