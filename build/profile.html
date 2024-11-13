@@ -5,15 +5,14 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/custom.css" rel="stylesheet"/>
+    <script src="js/profile.js" defer></script>
     <title>Travel Threads - Profile</title>
 </head>
 <body class="bg-new-white lg:bg-profile-bg-gradient bg-no-repeat flex min-h-screen">
     <aside class="hidden w-64 p-4 xl:flex flex-col lg:bg-profile-bg-gradient items-center">
-        <!-- Logo or Icon at the top -->
         <div class="hidden xl:block xl:mb-14">
             <img alt="Logo" class="h-[60px] w-[60px] mx-auto" src="../src/assets/images/icons/logo-dark.png">
         </div>
-        <!-- Navigation Links -->
         <nav class="flex flex-col text-primary font-primary text-base uppercase gap-7 mt-10">
             <a class="flex gap-3 text-new-white bg-primary py-3 px-5 border border-primary rounded items-end" href="#">
                 <img alt="World Globe Icon" class="w-5 h-5" src="../src/assets/images/icons/home.svg">
@@ -128,7 +127,7 @@
                         <div class="flex flex-col text-primary items-center gap-5">
                             <h1 class=" text-2xl font-heading tracking-wider">Welcome back!</h1>
                             <p class="font-primary text-base text-center">Hope you are feeling wander-ful today!</p>
-                            <button class="hover:bg-secondary hover:text-primary border-primary border rounded font-primary text-new-white text-lg bg-primary h-12 mt-5 mb-5 px-5">
+                            <button type="button" id="visit-blogpage-btn" class="hover:bg-secondary hover:text-primary border-primary border rounded font-primary text-new-white text-lg bg-primary h-12 mt-5 mb-5 px-5">
                                 Visit Your Blogpage
                             </button>
                         </div>
