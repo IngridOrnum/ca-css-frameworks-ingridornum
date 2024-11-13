@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
-    <title>Travel Threads - John Doe</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <script src="js/feed.js" defer></script>
+    <title>Travel Threads - Beyond the Map</title>
 </head>
-<body>
-
-
+<body class="flex flex-col items-center">
+    <div>
+    
+    </div>
+    <section class="flex flex-col items-center">
+        <h2>Destination Recommendations</h2>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2 class="">Browse By Continent</h2>
+        <div class="relative p-5">
+            <div class="absolute inset-0 z-1" id="continent-bg"></div>
+            <div class="flex flex-col font-primary text-new-black mt-24 gap-10">
+                <div id="title-continent" class="text-4xl mx-auto">Africa</div>
+                <button class="border border-new-black rounded mx-auto py-2 px-3">See More of Africa</button>
+            </div>
+            <div id="list-continents" class="flex justify-center mt-52  gap-5 relative text-new-black">
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Africa">Africa</span>
+                    <div class="absolute h-underline-continent bg-new-white left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Antarctica">Antarctica</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Asia">Asia</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Australia">Australia</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="North America">North America</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="South America">South America</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <span class="continent cursor-pointer relative active:text-new-white text-lg px-2" data-continent="Europe">Europe</span>
+                    <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
+                </div>
+            </div>
+            <div class="absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-20"></div>
+        </div>
+    </section>
+    <section class="flex flex-col items-center">
+        <h2>Latest posts</h2>
+    </section>
 </body>
 </html>

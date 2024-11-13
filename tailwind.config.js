@@ -25,7 +25,8 @@ module.exports = {
         'latest-post': 'linear-gradient(169deg, rgba(73, 30, 30, 0.39) 0%, #FCFCFB 100%)'
       },
       height: {
-        'profile-post': '120px'
+        'profile-post': '120px',
+        'underline-continent': '4px',
       },
       width: {
         'profile-section-sm': '366px',
