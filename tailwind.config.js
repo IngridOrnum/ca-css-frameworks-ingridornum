@@ -6,7 +6,8 @@ module.exports = {
       fontFamily: {
         heading: ['AdvercaseFont', 'sans-serif'],
         primary: ['Gotu', 'sans-serif'],
-        secondary: ['Poppins', 'sans-serif']
+        secondary: ['Poppins', 'sans-serif'],
+        tertiary: ['Flaviotte', 'sans-serif'],
       },
       colors: {
         'primary': '#2B1E49',

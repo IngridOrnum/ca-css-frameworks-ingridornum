@@ -3,31 +3,34 @@ const navInit = () => {
     const loginForm = document.getElementById('login-form');
     const registerBtn = document.getElementById('nav-signup');
     const registerForm = document.getElementById('register-form');
-    const heroTitle = document.getElementById('hero-title');
+    const heroContent = document.getElementById('hero-content');
     const blurBg = document.getElementById('blur-background');
+    const loginAlt = document.getElementById('login-alt');
+    const registerAlt = document.getElementById('register-alt');
+    const heroLoginBtn = document.getElementById('hero-login-btn');
 
     const showBackgroundElements = () => {
-        heroTitle.classList.add('hidden');
+        heroContent.classList.add('hidden');
         blurBg.classList.remove('hidden');
     };
 
     const hideBackgroundElements = () => {
-        heroTitle.classList.remove('hidden');
+        heroContent.classList.remove('hidden');
         blurBg.classList.add('hidden');
     };
 
     const showLoginForm = () => {
-        registerForm.classList.add('hidden'); // Hide register form
+        registerForm.classList.add('hidden');
         registerForm.classList.remove('flex');
-        loginForm.classList.remove('hidden'); // Show login form
+        loginForm.classList.remove('hidden');
         loginForm.classList.add('flex');
         showBackgroundElements();
     };
 
     const showRegisterForm = () => {
-        loginForm.classList.add('hidden'); // Hide login form
+        loginForm.classList.add('hidden');
         loginForm.classList.remove('flex');
-        registerForm.classList.remove('hidden'); // Show register form
+        registerForm.classList.remove('hidden');
         registerForm.classList.add('flex');
         showBackgroundElements();
     };
@@ -42,6 +45,16 @@ const navInit = () => {
         }
     });
 
+    loginAlt.addEventListener('click', () => {
+        if (loginForm.classList.contains('hidden')) {
+            showLoginForm();
+        } else {
+            hideBackgroundElements();
+            loginForm.classList.add('hidden');
+            loginForm.classList.remove('flex');
+        }
+    })
+
     registerBtn.addEventListener('click', () => {
         if (registerForm.classList.contains('hidden')) {
             showRegisterForm();
@@ -51,6 +64,26 @@ const navInit = () => {
             registerForm.classList.remove('flex');
         }
     });
+
+    registerAlt.addEventListener('click', () => {
+        if (registerForm.classList.contains('hidden')) {
+            showRegisterForm();
+        } else {
+            hideBackgroundElements();
+            registerForm.classList.add('hidden');
+            registerForm.classList.remove('flex');
+        }
+    })
+
+    heroLoginBtn.addEventListener('click', () => {
+        if (registerForm.classList.contains('hidden')) {
+            showRegisterForm();
+        } else {
+            hideBackgroundElements();
+            registerForm.classList.add('hidden');
+            registerForm.classList.remove('flex');
+        }
+    })
 }
 
 document.addEventListener('DOMContentLoaded', navInit);

@@ -1,7 +1,7 @@
-/*@font-face {*/
-/*    font-family: 'Flaviotte';*/
-/*    src: url("../../src/assets/fonts/Flaviotte.otf");*/
-/*}*/
+@font-face {
+    font-family: 'Flaviotte';
+    src: url("../../src/assets/fonts/Flaviotte.otf");
+}
 
 @font-face {
     font-family: 'AdvercaseFont';
@@ -14,3 +14,4 @@
     src: url("../../src/assets/fonts/AdvercaseFont-Demo-Bold.otf");
     font-weight: 700;
 }
+
