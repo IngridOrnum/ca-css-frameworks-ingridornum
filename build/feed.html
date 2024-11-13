@@ -19,11 +19,25 @@
         <h2 class="">Browse By Continent</h2>
         <div class="relative p-5">
             <div class="absolute inset-0 z-[-1] object-cover bg-cover bg-center bg-no-repeat" id="continent-bg"></div>
-            <div class="flex flex-col items-center w-full">
-                <div class="flex flex-col font-primary text-new-black mt-24 gap-10 p-10  backdrop-blur-md w-fit rounded">
-                    <div id="title-continent" class="text-4xl mx-auto">Africa</div>
+            
+<!--            <div class="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4 h-full mt-[-20px]">-->
+<!--                <button id="prev-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>-->
+<!--                <button id="next-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Next</button>-->
+<!--            </div>-->
+            
+<!--            <div class="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4">-->
+<!--                <button id="prev-btn" class="lg:hidden flex carousel-btn absolute top-1/2 left-1.5 transform -translate-y-1/2 bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>-->
+<!--                <button id="next-btn" class="lg:hidden flex carousel-btn absolute top-1/2 right-0 transform -translate-y-1/2 bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Next</button>-->
+<!--            -->
+<!--            </div>-->
+            
+            <div class="flex items-center w-full h-full justify-between mt-24">
+                <button id="prev-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>
+                <div class="flex flex-col font-primary text-new-black gap-10 p-10  backdrop-blur-md w-fit rounded">
+                    <div id="title-continent" class="text-4xl ">Africa</div>
                     <button class="border border-new-black rounded mx-auto py-2 px-3 hover:bg-new-white hover:border-transparent">See More</button>
                 </div>
+                <button id="next-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Next</button>
             </div>
             <div id="list-continents" class="hidden justify-center mt-52 gap-5 relative text-new-white font-primary lg:flex">
                 <div class="relative">
@@ -55,8 +69,8 @@
                     <div class="absolute h-underline-continent bg-transparent left-0 right-0 mx-auto"></div>
                 </div>
             </div>
-            <div class="absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-5"></div>
-            <div class="absolute bg-carousel-feed-gradient bottom-0 left-0 right-0 h-[20%] z-[-1]"></div>
+            <div class="hidden lg:flex absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-5"></div>
+            <div class="hidden lg:flex absolute bg-carousel-feed-gradient bottom-0 left-0 right-0 h-[20%] z-[-1]"></div>
         </div>
     </section>
     <section class="flex flex-col items-center">
