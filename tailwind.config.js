@@ -8,6 +8,8 @@ module.exports = {
         primary: ['Gotu', 'sans-serif'],
         secondary: ['Poppins', 'sans-serif'],
         tertiary: ['Flaviotte', 'sans-serif'],
+        Castoro: ['Castoro Titling', 'sans-serif'],
+        Alata: ['Alata', 'sans-serif'],
       },
       colors: {
         'primary': '#2B1E49',

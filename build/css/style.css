@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Castoro+Titling&family=Gotu&family=Poppins:wght@300;400;500;600&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -656,6 +656,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -676,6 +680,10 @@ video {
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -690,6 +698,10 @@ video {
 
 .h-5{
   height: 1.25rem;
+}
+
+.h-52{
+  height: 13rem;
 }
 
 .h-6{
@@ -738,6 +750,10 @@ video {
 
 .h-underline-continent{
   height: 4px;
+}
+
+.max-h-full{
+  max-height: 100%;
 }
 
 .min-h-screen{
@@ -813,12 +829,28 @@ video {
   width: 100vw;
 }
 
+.max-w-full{
+  max-width: 100%;
+}
+
+.max-w-xl{
+  max-width: 36rem;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -976,6 +1008,11 @@ video {
 
 .bg-\[\#FFE66A50\]{
   background-color: #FFE66A50;
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-new-white{
@@ -1138,6 +1175,14 @@ video {
   text-align: center;
 }
 
+.font-Alata{
+  font-family: Alata, sans-serif;
+}
+
+.font-Castoro{
+  font-family: Castoro Titling, sans-serif;
+}
+
 .font-heading{
   font-family: AdvercaseFont, sans-serif;
 }
@@ -1199,6 +1244,10 @@ video {
 
 .leading-none{
   line-height: 1;
+}
+
+.leading-tight{
+  line-height: 1.25;
 }
 
 .tracking-wider{
@@ -1388,6 +1437,23 @@ video {
   }
 }
 
+@media (min-width: 640px){
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:max-w-\[804px\]{
     max-width: 804px;
@@ -1406,6 +1472,10 @@ video {
 
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-\[318px\]{

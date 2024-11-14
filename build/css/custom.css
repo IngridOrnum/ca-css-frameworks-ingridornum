@@ -15,27 +15,3 @@
     font-weight: 700;
 }
 
-/*@layer utilities {*/
-/*    .list-continents::after {*/
-/*        content: '';*/
-/*        position: absolute;*/
-/*        bottom: -2px;*/
-/*        left: 0;*/
-/*        height: 2px;*/
-/*        background-color: transparent;*/
-/*        transform: scaleX(0);*/
-/*        transform-origin: left;*/
-/*        transition: transform 0.3s ease;*/
-/*    }*/
-
-/*    .continent:hover::after {*/
-/*        background-color: #aaaaaa;*/
-/*        transform: scaleX(1);*/
-/*    }*/
-
-/*    .continent.active::after {*/
-/*        height: 4px;*/
-/*        background-color: #FCFCFB;*/
-/*        transform: scaleX(1);*/
-/*    }*/
-/*}*/

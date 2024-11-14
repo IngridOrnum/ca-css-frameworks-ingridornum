@@ -9,29 +9,26 @@
     <title>Travel Threads - Beyond the Map</title>
 </head>
 <body class="flex flex-col items-center">
-    <div>
     
-    </div>
+    <section class="relative w-full h-screen bg-cover bg-center" style="background-image: url('../src/assets/images/feed/hero-feed.jpg');">
+        <div class="relative flex items-center justify-center h-full">
+            <div class="text-center text-white px-4 sm:px-8">
+                <h1 class="text-4xl sm:text-6xl font-Castoro font-bold leading-tight">Beyond The Map</h1>
+                <p class="mt-4 font-Alata text-lg sm:text-xl max-w-xl mx-auto">We help you find your next destination</p>
+            </div>
+        </div>
+    </section>
+    
     <section class="flex flex-col items-center">
         <h2>Destination Recommendations</h2>
+        
     </section>
+    
     <section class="flex flex-col items-center">
-        <h2 class="">Browse By Continent</h2>
+        <h2 class="font-Alata">Browse By Continent</h2>
         <div class="relative p-5">
             <div class="absolute inset-0 z-[-1] object-cover bg-cover bg-center bg-no-repeat" id="continent-bg"></div>
-            
-<!--            <div class="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4 h-full mt-[-20px]">-->
-<!--                <button id="prev-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>-->
-<!--                <button id="next-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Next</button>-->
-<!--            </div>-->
-            
-<!--            <div class="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4">-->
-<!--                <button id="prev-btn" class="lg:hidden flex carousel-btn absolute top-1/2 left-1.5 transform -translate-y-1/2 bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>-->
-<!--                <button id="next-btn" class="lg:hidden flex carousel-btn absolute top-1/2 right-0 transform -translate-y-1/2 bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Next</button>-->
-<!--            -->
-<!--            </div>-->
-            
-            <div class="flex items-center w-full h-full justify-between mt-24">
+            <div class="flex items-center w-full h-full justify-center mt-24">
                 <button id="prev-btn" class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-5 cursor-pointer text-xl z-10">Prev</button>
                 <div class="flex flex-col font-primary text-new-black gap-10 p-10  backdrop-blur-md w-fit rounded">
                     <div id="title-continent" class="text-4xl ">Africa</div>
@@ -73,8 +70,49 @@
             <div class="hidden lg:flex absolute bg-carousel-feed-gradient bottom-0 left-0 right-0 h-[20%] z-[-1]"></div>
         </div>
     </section>
-    <section class="flex flex-col items-center">
-        <h2>Latest posts</h2>
+    
+    <section class="w-full flex flex-col items-center">
+        <h2 class="text-2xl font-bold mb-4">Latest Posts</h2>
+        <div class="grid grid-cols-3 grid-rows-4 gap-2">
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/antarctica.jpg" alt="Antarctica">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/asia.jpg" alt="Asia">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/australia.jpg" alt="Australia">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/north-america.jpg" alt="North America">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/south-america.jpg" alt="South America">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/europe.jpg" alt="Europe">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+            <div class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden">
+                <img class="w-full h-full object-cover max-w-full max-h-full" src="../src/assets/images/feed/continents/africa.jpg" alt="Africa">
+            </div>
+        </div>
+        <button>View More Posts</button>
     </section>
+
 </body>
 </html>
