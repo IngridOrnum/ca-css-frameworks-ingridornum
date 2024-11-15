@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <script defer src="js/feed.js"></script>
+    <title>Travel Threads - Beyond the Map</title>
+  </head>
+  <body>
+    <section
+      class="relative w-full h-screen bg-cover bg-center"
+      style="
+        background-image: url(&quot;../src/assets/images/feed/bg-hero-feed.jpg&quot;);
+      "
+    >
+      <div class="relative flex items-center justify-center h-full">
+        <div class="text-center text-white px-4 sm:px-8">
+          <h1 class="text-4xl sm:text-6xl font-Castoro font-bold leading-tight">
+            Beyond The Map
+          </h1>
+          <p
+            class="mt-5 font-primary tracking-widest text-lg md:text-xl max-w-xl mx-auto"
+          >
+            We help you find your next destination
+          </p>
+          <p
+            class="mt-10 font-primary tracking-widest items-center justify-center text-sm md:text-md max-w-xl mx-auto flex flex-col"
+          >
+            Scroll for inspiration
+            <img
+              alt="Down arrow"
+              src="../src/assets/images/icons/down-arrow.png"
+            />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex flex-col m-10 gap-10 lg:gap-20 xl:gap-40">
+      <section class="flex flex-col items-center w-full lg:mt-14 xl:mt-36">
+        <h2
+          class="font-primary tracking-widest text-xl lg:text-2xl xl:text-3xl mb-5 text-center"
+        >
+          Destination Recommendations
+        </h2>
+        <div class="flex flex-wrap gap-2.5 w-full justify-center">
+          <div
+            class="group relative w-52 h-72 lg:w-64 lg:h-96 xl:w-96 xl:h-[480px] gap-2 flex flex-col items-center justify-center rounded overflow-hidden cursor-pointer"
+          >
+            <div
+              class="hidden lg:block lg:opacity-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 inset-0 absolute object-cover w-full h-full bg-[#FCFCFB90] z-10 items-center justify-center"
+            >
+              <div class="w-full h-full items-center justify-center flex">
+                <p
+                  class="text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+                >
+                  Iceland
+                </p>
+              </div>
+            </div>
+            <img
+              alt="Horses on Iceland"
+              class="w-full h-full object-cover max-w-full max-h-full z-1"
+              src="../src/assets/images/feed/iceland-feed.jpeg"
+            />
+            <p
+              class="lg:hidden text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+            >
+              Iceland
+            </p>
+          </div>
+          <div
+            class="group relative w-52 h-72 lg:w-64 lg:h-96 xl:w-96 xl:h-[480px] gap-2 flex flex-col items-center justify-center rounded overflow-hidden cursor-pointer"
+          >
+            <div
+              class="hidden lg:block lg:opacity-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 inset-0 absolute w-full h-full bg-[#FCFCFB90] z-10 items-center justify-center"
+            >
+              <div class="w-full h-full items-center justify-center flex">
+                <p
+                  class="text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+                >
+                  France
+                </p>
+              </div>
+            </div>
+            <img
+              alt="Mont Blanc in the French and Italian Alps"
+              class="w-full h-full object-cover max-w-full max-h-full"
+              src="../src/assets/images/feed/france.jpg"
+            />
+            <p
+              class="lg:hidden text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+            >
+              France
+            </p>
+          </div>
+          <div
+            class="group relative w-52 h-72 lg:w-64 lg:h-96 xl:w-96 xl:h-[480px] gap-2 flex flex-col items-center justify-center rounded overflow-hidden cursor-pointer"
+          >
+            <div
+              class="hidden lg:block lg:opacity-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 inset-0 absolute object-cover w-full h-full bg-[#FCFCFB90] z-10 items-center justify-center"
+            >
+              <div class="w-full h-full items-center justify-center flex">
+                <p
+                  class="text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+                >
+                  Italy
+                </p>
+              </div>
+            </div>
+            <img
+              alt="Lake Como in Italy"
+              class="w-full h-full object-cover max-w-full max-h-full"
+              src="../src/assets/images/feed/lake-como.jpg"
+            />
+            <p
+              class="lg:hidden text-xl font-secondary text-new-black font-bold justify-self-center align-middle uppercase"
+            >
+              Italy
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center">
+        <h2
+          class="font-primary tracking-widest text-xl lg:text-2xl xl:text-3xl mb-5 text-center"
+        >
+          Browse By Continent
+        </h2>
+        <div class="relative p-5 w-full h-[60vh] max-w-[1300px]">
+          <div
+            class="absolute inset-0 z-[-1] object-cover bg-cover bg-center bg-no-repeat"
+            id="continent-bg"
+          ></div>
+          <div
+            class="flex items-center w-full h-full justify-between lg:justify-center"
+          >
+            <button
+              class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-2 cursor-pointer text-xl z-10 hover:bg-new-white"
+              id="prev-btn"
+            >
+              <img
+                alt="Arrow back"
+                class="h-4 w-4"
+                src="../src/assets/images/icons/carousel-arrow-left.png"
+              />
+            </button>
+            <div
+              class="flex flex-col justify-between h-3/4 lg:h-auto lg:justify-center lg:gap-5"
+            >
+              <div
+                class="flex font-primary gap-2 lg:gap-10 p-4 lg:p-10 border border-opacity-new-white backdrop-blur-md w-fit rounded"
+              >
+                <div
+                  class="text-2xl lg:text-4xl text-center text-new-black"
+                  id="title-continent"
+                >
+                  Africa
+                </div>
+              </div>
+              <button
+                class="border-2 border-opacity-new-white text-md text-new-black bg-opacity-80 bg-new-white rounded-full mx-auto py-2 px-4 hover:bg-new-white hover:border-transparent hover:ease-in-out duration-500"
+              >
+                See More
+              </button>
+            </div>
+
+            <button
+              class="lg:hidden flex carousel-btn bg-opacity-new-white rounded p-2 cursor-pointer text-xl z-10 hover:bg-new-white"
+              id="next-btn"
+            >
+              <img
+                alt="Arrow next"
+                class="h-4 w-4"
+                src="../src/assets/images/icons/carousel-arrow-right.png"
+              />
+            </button>
+          </div>
+          <div
+            class="hidden justify-center mt-[-28px] gap-5 relative text-new-white font-primary lg:flex"
+            id="list-continents"
+          >
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="Africa"
+                >Africa</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-new-white left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="Antarctica"
+                >Antarctica</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="Asia"
+                >Asia</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="Australia"
+                >Australia</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="Europe"
+                >Europe</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="North America"
+                >North America</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+            <div class="relative">
+              <span
+                class="continent cursor-pointer relative active:text-new-white text-lg px-2"
+                data-continent="South America"
+                >South America</span
+              >
+              <div
+                class="absolute underline-continent h-underline-continent bg-transparent left-0 right-0 mx-auto"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="hidden lg:flex absolute h-underline-continent bg-opacity-new-white base-line bottom-0 left-0 right-0 mb-4 mx-5"
+          ></div>
+          <div
+            class="hidden lg:flex absolute bg-carousel-feed-gradient bottom-0 left-0 right-0 h-[20%] z-[-1]"
+          ></div>
+        </div>
+      </section>
+
+      <section class="w-full flex flex-col items-center">
+        <h2
+          class="text-xl lg:text-2xl xl:text-3xl mb-5 font-primary tracking-widest text-center"
+        >
+          Latest Posts
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-4 gap-2"
+        >
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Africa"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/africa-feed.jpg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Africa</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Antarctica"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/antarctica-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Antarctica</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Asia"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/asia.jpeg"
+              />
+            </div>
+
+            <p class="font-secondary pt-2.5">Beijing</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Australia"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/australia-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Sydney</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="North America"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/north-america-feed.jpg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Ottawa</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="South America"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/south-america-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Peru</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Europe"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/europe-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Slovenia</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Africa"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/africa-feed.jpg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Zambia</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Antarctica"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/antarctica-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Antarctica</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Asia"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/asia.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Tokyo</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="Australia"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/australia-feed.jpeg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Canberra</p>
+          </div>
+          <div
+            class="bg-[#F3D0BB40] p-2.5 rounded flex flex-col items-center cursor-pointer hover:bg-[#F3D0BB95] hover:duration-500 hover:ease-in-out uppercase font-bold tracking-wide"
+          >
+            <div
+              class="bg-gray-300 w-64 h-52 flex items-center justify-center rounded overflow-hidden"
+            >
+              <img
+                alt="North America"
+                class="w-full h-full object-cover max-w-full max-h-full"
+                src="../src/assets/images/feed/continents/north-america-feed.jpg"
+              />
+            </div>
+            <p class="font-secondary pt-2.5">Mexico</p>
+          </div>
+        </div>
+        <button
+          class="py-2 px-4 font-primary border border-new-black rounded mt-6 hover:bg-new-black hover:text-new-white duration-500 hover:ease-in-out lg:text-lg lg:py-4 lg:px-6 lg:mt-10"
+        >
+          View More Posts
+        </button>
+      </section>
+    </div>
+
+    <footer class="bg-[#F3D0BB40] w-full h-fit m-0 p-10 lg:p-40 lg:mt-20">
+      <div
+        class="flex flex-col items-center gap-10 lg:gap-40 lg:flex-row-reverse justify-center"
+      >
+        <img
+          alt="Profile image"
+          class="rounded-full w-52 h-52 lg:w-72 lg:h-72 object-cover"
+          src="../src/assets/images/profile/profile-picture.jpg"
+        />
+        <div
+          class="flex flex-col items-center gap-5 text-center max-w-96 lg:max-w-[480px]"
+        >
+          <h3 class="font-primary text-new-black text-2xl">
+            Hello, nice to see you!
+          </h3>
+          <p class="font-secondary text-new-black text-md">
+            My name is Joanne Doe, and welcome to my travel blog!
+          </p>
+          <p class="font-secondary text-new-black text-md">
+            I’m a passionate traveler sharing my adventures, tips, and stories
+            from around the globe.
+          </p>
+          <button
+            class="font-primary bg-secondary border border-new-white rounded py-3 px-5 hover:bg-opacity-60 hover:ease-in-out duration-300 mt-5"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
