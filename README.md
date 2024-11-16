@@ -45,8 +45,9 @@ The blog interface is fully responsive, ensuring optimal usability on desktops, 
 * HTML, CSS, JavaScript: Core technologies for building the front-end interface.
 * ChatGPT: Used for debugging and assistance during development.
 * Figma: For designing wireframes and high-fidelity assets.
-* Iconify: For incorporating icons into the interface.
+* Iconify: Plugin in Figma for incorporating icons into the interface.
 * Google Fonts: For typography and enhancing the visual appeal.
+* Freepik & Unsplash: For finding images and icons.
 
 ## Challenges Faced
 * Ensuring font consistency during Tailwind CSS build processes.
