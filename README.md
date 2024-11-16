@@ -27,7 +27,7 @@ This project was created as part of an exam while studying at Noroff School of T
   * Buttons to create or edit posts, view latest posts, as well as view statistics (currently non-functional). 
   * Features a dropdown menu for mobile users.
 
-3. Feed Page: The feed page includes a visually appealing hero section, and sections for recommended destinations, posts by continent, and the latest posts where there is a unfunctional sort and search button. There is also a footer with a personalized description of the blog owner.
+3. Feed Page:
 * Includes the following sections:
   * A hero section with visually appealing imagery.
   * Recommended destinations to inspire travel ideas.
@@ -36,7 +36,7 @@ This project was created as part of an exam while studying at Noroff School of T
 * Footer with a personalized description of the blog owner.
 
 4. Responsive Layout
-* The blog interface is fully responsive, ensuring optimal usability on desktops, tablets and smartphones.
+The blog interface is fully responsive, ensuring optimal usability on desktops, tablets and smartphones.
 
 
 ## Tech Used
