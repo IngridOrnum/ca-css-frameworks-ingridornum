@@ -11,6 +11,7 @@ This project was created as part of an exam while studying at Noroff School of T
 - [Challenges Faced](#challenges-faced)
 - [Future Feautures](#future-features)
 - [Deployment and Project Links](#deployment-and-project-links)
+- [Attributions](#attributions)
 
 ## Features
 1. Landing page
@@ -22,8 +23,8 @@ This project was created as part of an exam while studying at Noroff School of T
   
 2. Admin Profile Page:
 * Displays the logged-in user's name (static)
-  * Navigation the users blog page
-  * create or edit posts, latest posts, as well as view statistics. There is a dropdown menu for mobile users.
+  * Navigation the users blog page.
+  * Buttons to create or edit posts, view latest posts, as well as view statistics (currently non-functional). 
   * Features a dropdown menu for mobile users.
 
 3. Feed Page: The feed page includes a visually appealing hero section, and sections for recommended destinations, posts by continent, and the latest posts where there is a unfunctional sort and search button. There is also a footer with a personalized description of the blog owner.
@@ -54,7 +55,8 @@ This project was created as part of an exam while studying at Noroff School of T
 ## Future Features
 For further development of this blog, I would like to add folloging features:
 * Search Functionality: To help users find specific posts quickly.
-* 
+* Add API for valid auth login and register.
+* Add API to create, edit and post blogposts.
 
 
 ## Deployment and Project Links
@@ -62,3 +64,6 @@ For further development of this blog, I would like to add folloging features:
 * [GitHub Repository](https://github.com/IngridOrnum/project-exam-1-blog)
 * [Figma Design](https://www.figma.com/design/h2OCILAUmPbyg0Pa2o1TzH/Exam-Project-1?node-id=1%3A5&t=MMt9nOGpAecWT2rN-1)
 
+## Attributions:
+* Some Icons by ["kliwir art"](https://www.freepik.com/icon/graph_17540802#fromView=family&page=1&position=6&uuid=3a44988e-423d-4f96-987b-4b6962af0d4e)
+* Image on Profile Page by [Storyset](https://storyset.com/travel)
