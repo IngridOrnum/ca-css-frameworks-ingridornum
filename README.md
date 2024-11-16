@@ -17,8 +17,8 @@ This project was created as part of an exam while studying at Noroff School of T
 * A visually immersive landing page featuring a video background.
 * Entry point for logging in or registering.
 * Error handling for invalid inputs:
-** Fields cannot be empty.
-** Passwords must have at least 8 characters.
+- Fields cannot be empty.
+- Passwords must have at least 8 characters.
   
 2. Admin Profile Page:
 * Displays the logged-in user's name (static)
