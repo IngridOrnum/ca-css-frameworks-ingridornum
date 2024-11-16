@@ -78,13 +78,16 @@
                 <div
                   class="flex flex-col text-primary font-primary text-xl gap-2"
                 >
-                  <label class="" for="password">Password</label>
+                  <label class="" for="password-register">Password</label>
                   <input
                     class="border border-primary border-1 rounded h-12 px-4"
-                    id="password"
+                    id="password-register"
                     name="password"
                     required
                     type="password"
+                    minlength="8"
+                    pattern=".{8,}"
+                    title="Password must be at least 8 characters long"
                   />
                 </div>
                 <div class="flex justify-between w-full">
