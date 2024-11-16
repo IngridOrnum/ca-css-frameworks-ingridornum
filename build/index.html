@@ -66,13 +66,13 @@
                 <div
                   class="flex flex-col text-primary font-primary text-xl gap-2"
                 >
-                  <label class="" for="username">Username</label>
+                  <label for="username">Username</label>
                   <input
                     class="border border-primary border-1 rounded h-12 px-4"
-                    id="username"
+                    id="usernameLogin"
                     name="username"
                     required
-                    type="username"
+                    type="text"
                   />
                 </div>
                 <div
@@ -85,15 +85,12 @@
                     name="password"
                     required
                     type="password"
-                    minlength="8"
-                    pattern=".{8,}"
-                    title="Password must be at least 8 characters long"
                   />
                 </div>
                 <div class="flex justify-between w-full">
                   <div>
                     <input name="remember-me" type="checkbox" />
-                    <label class="font-primary text-primary" for="remember-me"
+                    <label class="font-primary text-primary"
                       >Remember me</label
                     >
                   </div>
@@ -163,6 +160,7 @@
                     name="password"
                     required
                     type="password"
+                    minlength="8"
                   />
                 </div>
                 <button

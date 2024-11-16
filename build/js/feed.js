@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const continentData = {
-        Africa: 'url(../src/assets/images/feed/continents/africa-feed.jpg)',
-        Antarctica: 'url(../src/assets/images/feed/continents/antarctica-feed.jpeg)',
-        Asia: 'url(../src/assets/images/feed/continents/asia.jpeg)',
-        Australia: 'url(../src/assets/images/feed/continents/australia-feed.jpeg)',
-        "North America": 'url(../src/assets/images/feed/continents/north-america-feed.jpg)',
-        "South America": 'url(../src/assets/images/feed/continents/south-america-feed.jpeg)',
-        Europe: 'url(../src/assets/images/feed/continents/europe-feed.jpeg)'
+        Africa: 'url(assets/images/feed/continents/africa-feed.jpg)',
+        Antarctica: 'url(assets/images/feed/continents/antarctica-feed.jpeg)',
+        Asia: 'url(assets/images/feed/continents/asia.jpeg)',
+        Australia: 'url(assets/images/feed/continents/australia-feed.jpeg)',
+        "North America": 'url(assets/images/feed/continents/north-america-feed.jpg)',
+        "South America": 'url(assets/images/feed/continents/south-america-feed.jpeg)',
+        Europe: 'url(assets/images/feed/continents/europe-feed.jpeg)'
     };
 
     const titleContinent = document.getElementById('title-continent');

@@ -97,17 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         registerForm?.addEventListener('submit', (event) => {
-            const passwordInput = document.getElementById('password-register');
-            if (passwordInput.value.length < 8) {
-                event.preventDefault();
-                alert('Password must be at least 8 characters long.');
-            } else {
-                event.preventDefault();
-                window.location.href = 'profile.html';
-            }
+            event.preventDefault();
+            window.location.href = 'profile.html';
         });
     };
-
 
     navInit();
     formInit();
