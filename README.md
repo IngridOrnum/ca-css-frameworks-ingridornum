@@ -60,7 +60,7 @@ For further development of this blog, I would like to add folloging features:
 
 
 ## Deployment and Project Links
-* [Admin pages (deployed on Netlify)]([https://project-exam-1-blog.vercel.app/admin/account/login.html](https://travelthreads.netlify.app/))
+* [Admin pages (deployed on Netlify)](https://project-exam-1-blog.vercel.app/admin/account/login.html)
 * [GitHub Repository](https://github.com/IngridOrnum/ca-css-frameworks-ingridornum)
 * [Figma Design]([https://www.figma.com/design/h2OCILAUmPbyg0Pa2o1TzH/Exam-Project-1?node-id=1%3A5&t=MMt9nOGpAecWT2rN-1](https://www.figma.com/design/anQmdoEnziQ0ZPeDsNXqFC/Taiilwind-CA?node-id=1-3&t=kHZVw5MOhRDOEn7k-1))
 
