@@ -22,10 +22,21 @@ This project was created as part of an exam while studying at Noroff School of T
   
 2. Admin Profile Page:
 * Displays the logged-in user's name (static)
-** Navigation the users blog page
-  ** create or edit posts, latest posts, as well as view statistics. There is a dropdown menu for mobile users.
-* Feed Page: The feed page includes a visually appealing hero section, and sections for recommended destinations, posts by continent, and the latest posts where there is a unfunctional sort and search button. There is also a footer with a personalized description of the blog owner.
-* All pages have a responsive layout.
+ * Navigation the users blog page
+ * create or edit posts, latest posts, as well as view statistics. There is a dropdown menu for mobile users.
+ * Features a dropdown menu for mobile users.
+
+3. Feed Page: The feed page includes a visually appealing hero section, and sections for recommended destinations, posts by continent, and the latest posts where there is a unfunctional sort and search button. There is also a footer with a personalized description of the blog owner.
+* Includes the following sections:
+ * A hero section with visually appealing imagery.
+ * Recommended destinations to inspire travel ideas.
+ * Browse by continent section for geographic exploration.
+ * Latest posts with placeholders for search and sort buttons (currently non-functional).
+* Footer with a personalized description of the blog owner.
+
+4. Responsive Layout
+* The blog interface is fully responsive, ensuring optimal usability on desktops, tablets and smartphones.
+
 
 ## Tech Used
 * Tailwind CSS: Framework for styling and responsiveness.
