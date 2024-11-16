@@ -1,4 +1,4 @@
-# Nordic Trekking Blog - Exam Project 1
+# Travel Threads - Frameworks CA
 
 ## Project Description
 Travel Threads Blog Interface is a front-end user interface designed for travel enthusiasts to create and explore personal blogs. The app focuses on delivering an engaging and responsive design.
