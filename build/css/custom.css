@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Flaviotte';
-    src: url("../../src/assets/fonts/Flaviotte.otf");
+    src: url("../../assets/fonts/Flaviotte.otf");
 }
 
 @font-face {
     font-family: 'AdvercaseFont';
-    src: url("../../src/assets/fonts/AdvercaseFont-Demo-Bold.otf");
+    src: url("../../assets/fonts/AdvercaseFont-Demo-Bold.otf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'AdvercaseFont';
-    src: url("../../src/assets/fonts/AdvercaseFont-Demo-Bold.otf");
+    src: url("../../assets/fonts/AdvercaseFont-Demo-Bold.otf");
     font-weight: 700;
 }
 
