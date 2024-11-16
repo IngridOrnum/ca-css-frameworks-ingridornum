@@ -18,7 +18,8 @@ module.exports = {
         'tertiary': '#EF6570',
         'new-black': '#2F2F2F',
         'new-white': '#FCFCFB',
-        'opacity-new-white': '#FCFCFB60'
+        'opacity-new-white': '#FCFCFB60',
+        'opacity-new-black': '#2F2F2F80'
       },
       backgroundImage: {
         'hero-blur-gradient': 'linear-gradient(117deg, rgba(230, 230, 230, 0.38) 0%, rgba(230, 230, 230, 0.10) 100%)',
@@ -41,7 +42,7 @@ module.exports = {
       },
       screens: {
         'mobile-home': '480px'
-      }
+      },
     },
   },
   plugins: [],
